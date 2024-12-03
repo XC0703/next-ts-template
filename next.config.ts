@@ -1,7 +1,10 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+	sassOptions: {
+		api: 'modern-compiler',
+		additionalData: '@import "@/assets/styles/scss/index.scss";'
+	}
 };
 
 export default nextConfig;
